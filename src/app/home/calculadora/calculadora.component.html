@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="calculadora">
+    <h1>{{tittle}}</h1>
+  </div>
+
+  <div class="numeros">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Ingresa primer numero </span>
+      <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="num1">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Ingresa segundo numero</span>
+      <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="num2">
+    </div>
+
+  </div>
+
+  <div class="mostrarnumero">
+
+  <p>Resultado: {{result}}</p>
+
+  </div>
+
+  <div class="botones">
+    <button type="button" class="btn btn-success" (click)="add()"> Suma + </button>
+    <button type="button" class="btn btn-success" (click)="subtract()"> Resta - </button>
+    <button type="button" class="btn btn-success" (click)="multiply()"> Multiplicacion *</button>
+    <button type="button" class="btn btn-success" (click)="divide()"> Division / </button>
+  </div>
+</div>
+

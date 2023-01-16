@@ -1,0 +1,22 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "calculadora calculadora"
+    "numeros mostrarnumero"
+    "botones botones";
+}
+
+.calculadora { grid-area: calculadora; }
+
+.numeros { grid-area: numeros; }
+
+.mostrarnumero { grid-area: mostrarnumero; }
+
+.botones { grid-area: botones; }
+
+.btn btn-success{
+  margin-left: 20px;
+}
